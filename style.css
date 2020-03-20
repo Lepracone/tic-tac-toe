@@ -1,0 +1,22 @@
+#boardContainer{
+    width:604px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sqr{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+}
+
+.bot{
+    border-bottom: 2px solid black;
+}
+
+.right{
+    border-right: 2px solid black;
+}
