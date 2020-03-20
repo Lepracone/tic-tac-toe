@@ -1,7 +1,7 @@
 const player = (name, score, totalScore) => {
     return {name, score, totalScore}
 }
-
+activePlayer = 2;
 const gameBoard = (() =>{
     let board = ["X","O","","","X","","X","",""];
     let sqr = document.getElementsByClassName("sqr");
@@ -20,14 +20,16 @@ const gameBoard = (() =>{
     const setMark = () =>{
         boardContainer.addEventListener("click", function(e){
             let position = e.target.id;
-            console.log(position);
-            // let value = e.target.textContent;
-            // if(value === "" && activePlayer === 1){
-            //     board[               
-            // }else if(value === "" && activePlayer === 2){
-            //     value.textContent = ""
-            // };
+            let value = e.target.textContent;
+            if(value === "" && activePlayer === 1){
+                board[position] = "X";  
+                console.log(board)             
+            }else if(value === "" && activePlayer === 2){
+                board[position] = "O";
+            };
+        renderBoard();
         });
+        
     };
 
 
