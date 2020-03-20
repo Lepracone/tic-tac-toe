@@ -32,10 +32,15 @@ const gameBoard = (() =>{
         
     };
 
+    const clearBoard = () => {
+        board = ["","","","","","","","",""];
+        renderBoard();
+    }
 
 
 
-return {renderBoard, setMark};
+
+return {renderBoard, setMark, clearBoard};
 })();
 
 
