@@ -24,6 +24,8 @@ newGame.addEventListener("click", function(){
     playerOne.score = 0;
     playerTwo.score = 0;
     gameBoard.updateScoreBoard();
+    activePlayer = Math.floor(Math.random() * 2) + 1; 
+    console.log(activePlayer);
     if(activePlayer === 1){
         messageBoard.textContent = playerOne.name + ", your turn!"
     }else{
