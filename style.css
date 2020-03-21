@@ -3,6 +3,8 @@
     height: 600px;
     display: flex;
     flex-wrap: wrap;
+    margin: 40px auto;
+    font-family: 'Press Start 2P', cursive;
 }
 .sqr{
     width: 200px;
@@ -10,7 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 150px;
+    font-size: 120px;
+    text-align: center;
 }
 
 .bot{
@@ -19,4 +22,67 @@
 
 .right{
     border-right: 2px solid black;
+}
+
+.invisible{
+    display: none;
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    margin: 40px auto;
+    width: 600px;
+    text-align: center;
+}
+
+#playerContainer{
+    display: flex;
+    width: 600px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    
+}
+
+#nextRoundDiv{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#nextRound{
+    font-family: 'Press Start 2P', cursive;
+    padding:5px;
+}
+
+.scoreDisplay{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#newGame{
+    font-family: 'Press Start 2P', cursive;
+    padding:5px;
+}
+
+input{
+    font-family: 'Press Start 2P', cursive;
+    padding: 5px;
+    width: 150px;
+}
+
+#messageBoardContainer{
+    width:600px;
+    height: 50px;
+    margin:20px auto;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+#messageBoard{
+    text-align: center;
+    display: flex;
+    align-items: center;
 }

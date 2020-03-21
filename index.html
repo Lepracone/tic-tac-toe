@@ -3,23 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
+    <h1>Tic-Tac-Toe</h1>
 
-        <div id="boardContainer">
-            <div id="0" class="sqr bot right"></div>
-            <div id="1" class="sqr bot right"></div>
-            <div id="2" class="sqr bot"></div>
-            <div id="3" class="sqr right bot"></div>
-            <div id="4" class="sqr right bot"></div>
-            <div id="5" class="sqr bot"></div>
-            <div id="6" class="sqr right"></div>
-            <div id="7" class="sqr right"></div>
-            <div id="8" class="sqr"></div>
-            
-
+    <div id="playerContainer">
+        <div id="p1Div">
+            <input id="input1" type="text" value="Player One">
         </div>
+        <div id="p2Div">
+            <input id="input2" type="text" value="Player Two">
+        </div>
+        <button id="newGame" type = "submit">New Game</button>
+    </div>
+
+    <div id="messageBoardContainer">
+        <div id="messageBoard">Press New Game!</div>
+    </div>
+
+    <div id="boardContainer">
+        <div id="0" class="sqr bot right"></div>
+        <div id="1" class="sqr bot right"></div>
+        <div id="2" class="sqr bot"></div>
+        <div id="3" class="sqr right bot"></div>
+        <div id="4" class="sqr right bot"></div>
+        <div id="5" class="sqr bot"></div>
+        <div id="6" class="sqr right"></div>
+        <div id="7" class="sqr right"></div>
+        <div id="8" class="sqr"></div>
+    </div>
+    
+    <div id="scoreContainer" class="invisible">
+        <div class="scoreDisplay">
+            <div id="p1NameText"></div>
+            <div id="p1Score">0</div>
+        </div>
+        <div class="scoreDisplay">
+            <div id="p2NameText"></div>
+            <div id="p2Score">0</div>
+        </div>
+    </div>
+
+    <div id="nextRoundDiv">
+        <button id="nextRound" class="invisible">Next Round!</button>
+    </div>
     <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
